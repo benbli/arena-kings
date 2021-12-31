@@ -1,0 +1,23 @@
+:root {
+  --primary-text: rgb(10, 27, 55);
+}
+
+body {
+  color: var(--primary-text);
+  font-family: sans-serif;
+  background-color: var(--primary-text);
+  margin: 3vh;
+}
+
+.container {
+  /* height: 80vh; */
+  background-color: #fff;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrapper {
+}
