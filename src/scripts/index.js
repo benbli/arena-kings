@@ -1,4 +1,12 @@
-console.log('loaded');
+import Draggable from './draggable.js'
+
+function init() {
+    const img = document.getElementById('olich-img')
+    const root = document.getElementById('scene')
+    // const draggableOlich = new Draggable(img, root)
+
+}
+
 function save() {
     var c = document.createElement("a");
     c.download = "options.json";
@@ -63,3 +71,5 @@ function save() {
     c.href = window.URL.createObjectURL(t);
     c.click();
     }
+
+    init()

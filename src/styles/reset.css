@@ -45,6 +45,6 @@ h6 {
 }
 
 #root,
-#__next {
+#scene {
   isolation: isolate;
 }

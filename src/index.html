@@ -6,21 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOK - Kingu</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    
     <section class="container">
         <h1>Kingu</h1>
-        <div class="img-wrapper">
+        <div class="img-wrapper" data-entity="VOLUME">
             <img src="images/frame_positions_default.webp" alt="">
         </div>
-        <!-- <canvas id="scene"></canvas> -->
+        <div id="scene">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+            <img id="olich-img" class="draggable" src="images/olich.png" alt="">
+        </div>
     </section>
-    <button id="export-btn" onclick="save()">export</button>
-    <script src="js/index.js"></script>
+    <button id="export-btn">export</button>
+    <script src="scripts/index.js" type="module"></script>
 </body>
 
 </html>
