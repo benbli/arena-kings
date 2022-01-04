@@ -62,6 +62,17 @@ boolEntities.forEach(function(entity) {
     });
 });
 
+const rangeEntities = document.querySelectorAll(`[data-range]`);
+
+rangeEntities.forEach(function(entity) {
+    entity.addEventListener('input', function(evt) {
+        numValId = this.id + "_VALUE";
+        document.getElementById(numValId).innerHTML = this.value;
+        text[this.id] = this.value;
+        console.log(text[this.id]);
+    })
+})
+
 function save() {
     var c = document.createElement("a");
     c.download = "options.json";

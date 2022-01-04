@@ -1,11 +1,11 @@
 :root {
-  --primary-text: rgb(10, 27, 55);
+  --primary-text: rgb(255, 255, 255);
 }
 
 body {
   color: var(--primary-text);
   font-family: sans-serif;
-  background-color: var(--primary-text);
+  background-color: rgb(10, 27, 55);
   margin: 3vh;
 }
 
