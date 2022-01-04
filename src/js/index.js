@@ -67,8 +67,8 @@ const rangeEntities = document.querySelectorAll(`[data-range]`);
 rangeEntities.forEach(function(entity) {
     entity.addEventListener('input', function(evt) {
         numValId = this.id + "_VALUE";
-        document.getElementById(numValId).innerHTML = this.value;
         text[this.id] = this.value;
+        document.getElementById(numValId).innerHTML = text[this.id];
         console.log(text[this.id]);
     })
 })
